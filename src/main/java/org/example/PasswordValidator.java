@@ -6,7 +6,7 @@ public class PasswordValidator {
 
     public static void validate(String password) {
         int length = password.length(); // ctrl+alt+v 로 중복 변수생성가능
-        if(length < 8|| length >12) {
+        if(length < 8 || length > 12) {
             throw new IllegalArgumentException(WRONG_PASSWORD_LENGTH_EXCEPTION_MESSAGE);
         }
         // int length=password.length();
