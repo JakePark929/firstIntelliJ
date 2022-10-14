@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/ArithmeticOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/calculate/AdditionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/calculate/DivisionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/calculate/MultiplicationOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/calculate/NewArithmeticOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/calculate/PositiveNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/calculator/calculate/SubtractionOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/calculator/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/calculator/PositiveNumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: make calculator with test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/Courses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/GradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradecalculator/CourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradecalculator/GradeCalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PasswordValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +65,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.gradecalculator" />
       <recent name="org.calculator" />
       <recent name="org.example" />
     </key>
@@ -85,22 +79,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PositiveNumberTest.createTest (1)">
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop-practice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.calculator" />
-      <option name="MAIN_CLASS_NAME" value="org.calculator.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GradeCalculatorTest.calculateGradeTest">
     <configuration name="CalculatorTest.calculateExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
@@ -117,17 +96,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.calculateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.calculator.calculate.*" />
+          <option name="PATTERN" value="org.gradecalculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.calculator" />
-      <option name="MAIN_CLASS_NAME" value="org.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="calculateTest(int,java.lang.String,int,int)" />
+      <option name="PACKAGE_NAME" value="org.gradecalculator" />
+      <option name="MAIN_CLASS_NAME" value="org.gradecalculator.CourseTest" />
+      <option name="METHOD_NAME" value="createTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GradeCalculatorTest.calculateGradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-practice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.gradecalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.gradecalculator" />
+      <option name="MAIN_CLASS_NAME" value="org.gradecalculator.GradeCalculatorTest" />
+      <option name="METHOD_NAME" value="calculateGradeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GradeCalculatorTest.calculateGradeTest" />
+        <item itemvalue="JUnit.CourseTest.createTest" />
         <item itemvalue="JUnit.PositiveNumberTest.createTest (1)" />
         <item itemvalue="JUnit.PositiveNumberTest.createTest" />
         <item itemvalue="JUnit.CalculatorTest.calculateExceptionTest" />
-        <item itemvalue="JUnit.CalculatorTest.calculateTest" />
-        <item itemvalue="JUnit.CalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665623996520</updated>
       <workItem from="1665623998608" duration="11438000" />
-      <workItem from="1665704924368" duration="8906000" />
+      <workItem from="1665704924368" duration="13342000" />
     </task>
     <task id="LOCAL-00001" summary="feat: first commit">
       <created>1665647731093</created>
@@ -193,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665647731093</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: make calculator with test">
+      <created>1665728723872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665728723872</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +214,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: first commit" />
+    <MESSAGE value="feat: make calculator with test" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: make calculator with test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
