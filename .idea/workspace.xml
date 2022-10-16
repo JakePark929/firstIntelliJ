@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: make calculator with test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/Courses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradecalculator/GradeCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradecalculator/CourseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/gradecalculator/GradeCalculatorTest.java" afterDir="false" />
+    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: make gradeCalculator with test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/Cook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/Cooking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/customer/MenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/customer/CookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/customer/CookingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/customer/CustomerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/customer/MenuItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/customer/MenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,25 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "11",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.customer" />
       <recent name="org.gradecalculator" />
       <recent name="org.calculator" />
       <recent name="org.example" />
@@ -79,82 +85,82 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GradeCalculatorTest.calculateGradeTest">
-    <configuration name="CalculatorTest.calculateExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CustomerTest.orderTest">
+    <configuration name="CookTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.calculator.*" />
+          <option name="PATTERN" value="org.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.calculator" />
-      <option name="MAIN_CLASS_NAME" value="org.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="calculateExceptionTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CourseTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop-practice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.gradecalculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.gradecalculator" />
-      <option name="MAIN_CLASS_NAME" value="org.gradecalculator.CourseTest" />
+      <option name="PACKAGE_NAME" value="org.customer" />
+      <option name="MAIN_CLASS_NAME" value="org.customer.CookTest" />
       <option name="METHOD_NAME" value="createTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GradeCalculatorTest.calculateGradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CookingTest.makeCookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.gradecalculator.*" />
+          <option name="PATTERN" value="org.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.gradecalculator" />
-      <option name="MAIN_CLASS_NAME" value="org.gradecalculator.GradeCalculatorTest" />
-      <option name="METHOD_NAME" value="calculateGradeTest" />
+      <option name="PACKAGE_NAME" value="org.customer" />
+      <option name="MAIN_CLASS_NAME" value="org.customer.CookingTest" />
+      <option name="METHOD_NAME" value="makeCookTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveNumberTest.createTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerTest.orderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.calculator.*" />
+          <option name="PATTERN" value="org.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.calculator" />
-      <option name="MAIN_CLASS_NAME" value="org.calculator.PositiveNumberTest" />
-      <option name="METHOD_NAME" value="createTest(int)" />
+      <option name="PACKAGE_NAME" value="org.customer" />
+      <option name="MAIN_CLASS_NAME" value="org.customer.CustomerTest" />
+      <option name="METHOD_NAME" value="orderTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveNumberTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuTest.chooseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.calculator.*" />
+          <option name="PATTERN" value="org.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.calculator" />
-      <option name="MAIN_CLASS_NAME" value="org.calculator.PositiveNumberTest" />
-      <option name="METHOD_NAME" value="createTest" />
+      <option name="PACKAGE_NAME" value="org.customer" />
+      <option name="MAIN_CLASS_NAME" value="org.customer.MenuTest" />
+      <option name="METHOD_NAME" value="chooseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuTest.chooseTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-practice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.customer" />
+      <option name="MAIN_CLASS_NAME" value="org.customer.MenuTest" />
+      <option name="METHOD_NAME" value="chooseTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GradeCalculatorTest.calculateGradeTest" />
-        <item itemvalue="JUnit.CourseTest.createTest" />
-        <item itemvalue="JUnit.PositiveNumberTest.createTest (1)" />
-        <item itemvalue="JUnit.PositiveNumberTest.createTest" />
-        <item itemvalue="JUnit.CalculatorTest.calculateExceptionTest" />
+        <item itemvalue="JUnit.CustomerTest.orderTest" />
+        <item itemvalue="JUnit.MenuTest.chooseTest2" />
+        <item itemvalue="JUnit.MenuTest.chooseTest" />
+        <item itemvalue="JUnit.CookingTest.makeCookTest" />
+        <item itemvalue="JUnit.CookTest.createTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +185,8 @@
       <option name="presentableId" value="Default" />
       <updated>1665623996520</updated>
       <workItem from="1665623998608" duration="11438000" />
-      <workItem from="1665704924368" duration="13342000" />
+      <workItem from="1665704924368" duration="14719000" />
+      <workItem from="1665961535115" duration="2615000" />
     </task>
     <task id="LOCAL-00001" summary="feat: first commit">
       <created>1665647731093</created>
@@ -195,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665728723872</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: make gradeCalculator with test">
+      <created>1665733306462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665733306462</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +229,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: first commit" />
     <MESSAGE value="feat: make calculator with test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: make calculator with test" />
+    <MESSAGE value="feat: make gradeCalculator with test" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: make gradeCalculator with test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/customer/CookingTest.java</url>
+          <line>11</line>
+          <properties class="org.customer.CookingTest" method="makeCookTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
