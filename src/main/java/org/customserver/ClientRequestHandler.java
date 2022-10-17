@@ -21,7 +21,7 @@ public class ClientRequestHandler implements Runnable {
     public void run() {
         /**
          * Step2 - 사용자 요청이 들어올 때마다 Thread를 새로 생성해서 사용자 요청을 처리하도록 한다. -> 쓰레드를 많이 생성하는 것은 비용이 큼
-         * CPU, 메모리 사용량이 증가하게 될 수 있음 -> 서버리소스 한계로 서버다운 -> 안정적으로 바꿔줘야됨
+         * CPU context switching, 메모리 사용량이 증가하게 될 수 있음 -> 서버리소스 한계로 서버다운 -> 안정적으로 바꿔줘야 됨
          */
         logger.info("[ClientRequestHandler] new client {} started.", Thread.currentThread().getName());
         try (InputStream in = clientSocket.getInputStream(); OutputStream out = clientSocket.getOutputStream()) {

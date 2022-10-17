@@ -1,0 +1,30 @@
+GET http://localhost:8080/calculate?operand1=10&operator=-&operand2=55
+
+<> 2022-10-17T131235.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=10&operator=-&operand2=55
+
+<> 2022-10-17T130151.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=10&operator=-&operand2=55
+
+<> 2022-10-17T110738.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=10&operator=-&operand2=55
+
+<> 2022-10-17T110726.200.json
+
+###
+
+GET http://localhost:8080/calculate?operand1=10&operator= &operand2=55
+
+<> 2022-10-17T110641.200.json
+
+###
+
