@@ -10,7 +10,7 @@ class UserTest {
     @Test // alt+insert
     void passwordTest() {
         // given
-        User user = new User();
+        UserEx user = new UserEx();
 
         // when
         user.initPassword(()->"abcdefgh");
@@ -25,7 +25,7 @@ class UserTest {
     @Test // alt+insert
     void passwordTest2() {
         // given
-        User user = new User();
+        UserEx user = new UserEx();
 
         // when
         user.initPassword(()->"ab");

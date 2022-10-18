@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: make customWAS+ThreadPool">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/counter/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/counter/RaceConditionDemo.java" afterDir="false" />
+    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: about GCI rule">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/jdbc/UserDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/db_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,16 +67,16 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.jdbc" />
       <recent name="org.customserver" />
       <recent name="org.customer" />
       <recent name="org.gradecalculator" />
       <recent name="org.calculator" />
-      <recent name="org.example" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -82,7 +88,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RaceConditionDemo">
+  <component name="RunManager" selected="JUnit.UserDaoTest.createTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="oop-practice.main" />
@@ -112,22 +118,6 @@
     <configuration name="test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="QueryStringTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop-practice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.customserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.customserver" />
-      <option name="MAIN_CLASS_NAME" value="org.customserver.QueryStringTest" />
-      <option name="METHOD_NAME" value="createTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="QueryStringsTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
@@ -144,13 +134,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop-practice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="org.jdbc.UserDaoTest" />
+      <option name="METHOD_NAME" value="createTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.createTest" />
         <item itemvalue="Application.RaceConditionDemo" />
         <item itemvalue="HTTP Request.test | #1" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.QueryStringsTest.createTest" />
-        <item itemvalue="JUnit.QueryStringTest.createTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +172,9 @@
       <workItem from="1665704924368" duration="14719000" />
       <workItem from="1665961535115" duration="3593000" />
       <workItem from="1665965594892" duration="12290000" />
+      <workItem from="1665986436977" duration="32000" />
+      <workItem from="1666050502004" duration="609000" />
+      <workItem from="1666058004203" duration="4614000" />
     </task>
     <task id="LOCAL-00001" summary="feat: first commit">
       <created>1665647731093</created>

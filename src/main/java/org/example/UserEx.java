@@ -1,6 +1,6 @@
 package org.example;
 
-public class User {
+public class UserEx {
     private String password;
 
 //    public void initPassword(RandomPasswordGenerator passwordGenerator) {
