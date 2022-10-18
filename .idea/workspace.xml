@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: about GCI rule">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/jdbc/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/db_schema.sql" afterDir="false" />
+    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: JDBC Programming">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/JdbcTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/PreparedStatementSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/RowMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UserEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jdbc/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jdbc/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jdbc/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +29,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="HTTP Request" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -174,7 +171,7 @@
       <workItem from="1665965594892" duration="12290000" />
       <workItem from="1665986436977" duration="32000" />
       <workItem from="1666050502004" duration="609000" />
-      <workItem from="1666058004203" duration="4614000" />
+      <workItem from="1666058004203" duration="8094000" />
     </task>
     <task id="LOCAL-00001" summary="feat: first commit">
       <created>1665647731093</created>
@@ -232,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665980176500</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: JDBC Programming">
+      <created>1666066465574</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666066465574</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +262,8 @@
     <MESSAGE value="feat: make customWAS with test" />
     <MESSAGE value="feat: make customWAS+Thread" />
     <MESSAGE value="feat: make customWAS+ThreadPool" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: make customWAS+ThreadPool" />
+    <MESSAGE value="feat: JDBC Programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: JDBC Programming" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
