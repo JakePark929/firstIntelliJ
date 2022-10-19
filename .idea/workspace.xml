@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: JDBC with Tdd">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/annotation/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/annotation/RequestMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/annotation/RequestMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/annotation/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/controller/HealthCheckController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/controller/HomeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/model/Userc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/mvc/ReflectionTest.java" afterDir="false" />
+    <list default="true" id="61f94342-183a-41cf-a1d5-3a79b205eb74" name="Changes" comment="feat: MVC Reflection with Tdd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/handler/WebApplicationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/mvc/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapps/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mvc/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mvc/controller/HomeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +33,9 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="HTTP Request" />
-        <option value="Interface" />
         <option value="Enum" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -71,7 +69,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "251aa68744e4d356db79e07b2af27bdf"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -93,7 +92,20 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReflectionTest.load">
+  <component name="RunManager" selected="Application.WebApplicationServer">
+    <configuration name="WebApplicationServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.handler.WebApplicationServer" />
+      <module name="oop-practice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.handler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReflectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop-practice.test" />
       <extension name="coverage">
@@ -157,29 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop-practice.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="org.jdbc.UserDaoTest" />
-      <option name="METHOD_NAME" value="createTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebApplicationServer" />
         <item itemvalue="JUnit.ReflectionTest.load" />
         <item itemvalue="JUnit.ReflectionTest.showClass" />
         <item itemvalue="JUnit.ReflectionTest" />
         <item itemvalue="JUnit.ReflectionTest.controllerScan" />
-        <item itemvalue="JUnit.UserDaoTest.createTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +193,8 @@
       <workItem from="1665965594892" duration="12290000" />
       <workItem from="1665986436977" duration="32000" />
       <workItem from="1666050502004" duration="609000" />
-      <workItem from="1666058004203" duration="15165000" />
+      <workItem from="1666058004203" duration="16065000" />
+      <workItem from="1666134638324" duration="7188000" />
     </task>
     <task id="LOCAL-00001" summary="feat: first commit">
       <created>1665647731093</created>
@@ -269,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666070230683</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: MVC Reflection with Tdd">
+      <created>1666079547652</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666079547652</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +301,8 @@
     <MESSAGE value="feat: make customWAS+ThreadPool" />
     <MESSAGE value="feat: JDBC Programming" />
     <MESSAGE value="feat: JDBC with Tdd" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: JDBC with Tdd" />
+    <MESSAGE value="feat: MVC Reflection with Tdd" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: MVC Reflection with Tdd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
