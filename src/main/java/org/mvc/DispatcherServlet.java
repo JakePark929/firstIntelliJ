@@ -44,14 +44,15 @@ public class DispatcherServlet extends HttpServlet {
         log.info("[DispatcherServlet] service started.");
         String requestURI = request.getRequestURI();
         RequestMethod requestMethod = RequestMethod.valueOf(request.getMethod());
-        try {
-            // UserCreateController
+        // UserCreateController
 //            Object handler = handlerMappings.findHandler(new HandlerKey(RequestMethod.valueOf(request.getMethod()), request.getRequestURI()));
-            Object handler = handlerMappings.stream()
-                    .filter(hm -> hm.findHandler(new HandlerKey(requestMethod, requestURI)) != null)
-                    .map(hm -> hm.findHandler(new HandlerKey(requestMethod, requestURI)))
-                    .findFirst()
-                    .orElseThrow(() -> new ServletException("No handler for [" + requestMethod + ", " + requestURI + "]"));
+        Object handler = handlerMappings.stream()
+                .filter(hm -> hm.findHandler(new HandlerKey(requestMethod, requestURI)) != null)
+                .map(hm -> hm.findHandler(new HandlerKey(requestMethod, requestURI)))
+                .findFirst()
+                .orElseThrow(() -> new ServletException("No handler for [" + requestMethod + ", " + requestURI + "]"));
+
+        try {
             // viewName: "redirect:/users" vs forward
 //            String viewName = handler.handleRequest(request, response);
 
@@ -61,6 +62,7 @@ public class DispatcherServlet extends HttpServlet {
                     .filter(ha -> ha.supports(handler))
                     .findFirst()
                     .orElseThrow(() -> new ServletException("No adapter for handler [" + handler + "]"));
+
             ModelAndView modelAndView = handlerAdapter.handle(request, response, handler);
 
             for (ViewResolver viewResolver : viewResolvers) {
